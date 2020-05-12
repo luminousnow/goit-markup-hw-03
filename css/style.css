@@ -1,0 +1,247 @@
+:root {
+  --font-primary-color: #757575;
+  --font-secondary-color: #212121;
+  --font-third-color: #ffffff;
+
+  --bgc-primary: #ffffff;
+  --bgc-secondary: #f5f4fa;
+  --bgc-footer: #2f303a;
+  --bgc-card-description: rgba(33, 150, 243, 0.9);
+
+  --font-button: #ffffff;
+  --bgc-button: #2196f3;
+
+  --hero-font-color: #ffffff;
+  --font-active-element: #2196f3;
+  --font-ftr-contact: rgba(255, 255, 255, 0.6);
+  --font-ftr-copiright: rgba(255, 255, 255, 0.4);
+}
+
+/* Global css options of all pages */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--font-primary-color);
+
+  background-color: var(--bgc-primary);
+}
+
+/* option deletes the underline from the link */
+.link {
+  text-decoration: none;
+}
+
+/* option deletes the marker of the list */
+.list {
+  list-style: none;
+}
+
+/* option virtual button */
+.vrt-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--font-button);
+
+  background-color: var(--bgc-button);
+}
+
+/* Logo css options */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* change color on part of the Logo */
+.logo-color {
+  color: var(--font-active-element);
+}
+
+/* Logo css options for header */
+.logo.hdr {
+  color: var(--font-secondary-color);
+}
+
+/* Logo css options for footer */
+.logo.ftr {
+  color: var(--font-third-color);
+}
+
+/* Header Menu css options */
+.menu .menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--font-secondary-color);
+}
+
+/* change color Menu items */
+.menu .menu-item:hover,
+.menu .menu-item:focus {
+  color: var(--font-active-element);
+}
+
+/* option backlight Menu items */
+.menu-item.active {
+  color: var(--font-active-element);
+}
+
+/* Header contacts css options */
+.header .contact {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+
+/* change color Contact items */
+.header .contact:hover,
+.header .contact:focus {
+  color: var(--font-active-element);
+}
+
+/* Hero css options*/
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--hero-font-color);
+  text-align: center;
+  text-transform: uppercase;
+
+  /* for example */
+  background-color: rgb(255, 0, 0);
+}
+
+/* css options of title for all sections*/
+.sections .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--font-secondary-color);
+}
+
+/* css options for feature title */
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--font-secondary-color);
+  text-transform: uppercase;
+}
+
+/* css options for product title */
+.products-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--font-third-color);
+  text-align: center;
+  text-transform: uppercase;
+
+  /* for example */
+  background-color: rgb(255, 0, 0);
+}
+
+/* Team sections bgc*/
+.team-bgc {
+  background-color: var(--bgc-secondary);
+}
+
+/* css options for team title */
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--font-secondary-color);
+}
+
+/* css options for position team member*/
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--font-primary-color);
+}
+/* Footer css for all sections*/
+.footer {
+  color: var(--font-third-color);
+  background-color: var(--bgc-footer);
+}
+
+/* change font style for address*/
+.address {
+  font-style: normal;
+}
+
+/* change color style for tel.& email in address*/
+.footer .contact {
+  color: var(--font-ftr-contact);
+}
+
+/* css options for social nets*/
+.social {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* css options for copiright text */
+.copiright {
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: var(--font-ftr-copiright);
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-secondary-color);
+
+  background-color: var(--bgc-secondary);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--font-third-color);
+
+  background-color: var(--font-active-element);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--font-secondary-color);
+}
+
+.card-kinde {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--font-primary-color);
+}
+
+.card-description {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--font-third-color);
+
+  background-color: var(--bgc-card-description);
+}
