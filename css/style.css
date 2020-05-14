@@ -1,3 +1,23 @@
+/* 
+  - оутлайн на всі блоки 
+  - обгорнути секції в контейнер на 1230рх, марджин лефт і райт авто https://youtu.be/_StgByWohXQ?t=3663
+  - боді скинути марджин на 0
+  - add normalize css
+  - падінг на контейнер -15 і -15
+  - переповнення тексту для кнопки min-width
+  - іконки. поставити заливку кольором + радіус 100% https://youtu.be/_StgByWohXQ?t=3234
+
+
+
+
+  - Меню: елементи в інлайн-блок, алайн ітемс, контакти марджин-лефт авто
+  - Адаптивне розміщення блоків. 
+    Флекс+ формула - марджини зі сторони і з низу
+  - 1,38 переглянути про марджин -15
+  - 2,04 переглянути про реверс
+  
+*/
+
 :root {
   --font-primary-color: #757575;
   --font-secondary-color: #212121;
@@ -28,6 +48,7 @@ html {
   outline: 1px solid green;
 }
 
+/* global reset hedings margin-top and margin-bottom */
 h1,
 h2,
 h3,
@@ -40,8 +61,15 @@ ul {
   margin-bottom: 0px;
 }
 
+/* global settings tag images */
+img {
+  display: block;
+}
+
 /* Global css options of all pages */
 body {
+  margin: 0px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -64,12 +92,18 @@ body {
 
 /* option virtual button */
 .vrt-button {
-  /* переповнення тексту для кнопки */
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--font-button);
+  text-align: center;
 
   background-color: var(--bgc-button);
 }
@@ -132,6 +166,10 @@ body {
 }
 
 /* Hero css options*/
+.hero {
+  text-align: center;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
