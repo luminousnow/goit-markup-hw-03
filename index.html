@@ -16,42 +16,53 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="conteiner">
-        <nav class="menu">
-          <a href="./index.html" class="logo hdr link">
-            <span class="logo-color">Web</span> Studio
-          </a>
-          <ul class="list">
-            <li>
-              <a href="./index.html" class="menu-item link active">Студия</a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="menu-item link">Портфолио</a>
-            </li>
-            <li><a href="" class="menu-item link">Контакты</a></li>
-          </ul>
-        </nav>
+        <div class="header-nav">
+          <nav class="nav">
+            <a href="./index.html" class="logo hdr link">
+              <span class="logo-color">Web</span> Studio
+            </a>
+            <ul class="menu list">
+              <li class="item">
+                <a href="./index.html" class="menu-link link active">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="menu-link link">Портфолио</a>
+              </li>
+              <li class="item">
+                <a href="" class="menu-link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact link">
-              <span class="icon-contact"></span> info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contact link">
-              <span class="icon-contact"></span> +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="nav-contact list">
+            <li class="item">
+              <span class="icon-contact"></span>
+              <a href="mailto:info@devstudio.com" class="contact link">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <span class="icon-contact"></span>
+              <a href="tel:+380961111111" class="contact link">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
+    <!-- Main -->
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title">
+          Эффективные решения <br />
+          для вашего бизнеса
+        </h1>
         <a href="" class="vrt-button link">Заказать услугу</a>
       </section>
 
@@ -60,7 +71,7 @@
         <div class="conteiner">
           <h2 class="title hiden">Преимущества</h2>
           <ul class="feature list">
-            <li>
+            <li class="item">
               <span class="icon-feature"></span>
               <h3 class="feature-title">Внимание к деталям</h3>
               <p>
@@ -68,7 +79,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <span class="icon-feature"></span>
               <h3 class="feature-title">Пунктуальность</h3>
               <p>
@@ -76,7 +87,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <span class="icon-feature"></span>
               <h3 class="feature-title">Планирование</h3>
               <p>
@@ -84,7 +95,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <span class="icon-feature"></span>
               <h3 class="feature-title">Современные технологии</h3>
               <p>
@@ -101,7 +112,7 @@
         <div class="conteiner">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="products list">
-            <li>
+            <li class="item">
               <img
                 src="./img/product-desktop-app.jpg"
                 alt="Ноутбук"
@@ -110,7 +121,7 @@
               />
               <h3 class="products-title">Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./img/product-mobil-app.jpg"
                 alt="Смартфон"
@@ -119,7 +130,7 @@
               />
               <h3 class="products-title">Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./img/product-designer-solution.jpg"
                 alt="Монитор с картой"
@@ -136,8 +147,8 @@
       <section class="section team-bgc">
         <div class="conteiner">
           <h2 class="title">Наша команда</h2>
-          <ul lang="en" class="list team">
-            <li>
+          <ul class="list team">
+            <li class="team-member">
               <img
                 src="./img/team-john-smith.jpg"
                 alt="photo John Smith"
@@ -146,8 +157,8 @@
               />
               <h3 class="team-title">John Smith</h3>
               <p class="team-position">Product Designer</p>
-              <ul class="list">
-                <li>
+              <ul class="team-social list">
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Instagram"
@@ -155,7 +166,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Twitter"
@@ -163,7 +174,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Facebook"
@@ -171,7 +182,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на LinkedIn"
@@ -181,7 +192,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-member">
               <img
                 src="./img/team-marta-stewart.jpg"
                 alt="photo Marta Stewart"
@@ -190,8 +201,8 @@
               />
               <h3 class="team-title">Marta Stewart</h3>
               <p class="team-position">Frontend Developer</p>
-              <ul class="list">
-                <li>
+              <ul class="team-social list">
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Instagram"
@@ -199,7 +210,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Twitter"
@@ -207,7 +218,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Facebook"
@@ -215,7 +226,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на LinkedIn"
@@ -225,7 +236,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-member">
               <img
                 src="./img/team-robert-jakis.jpg"
                 alt="photo Robert Jakis"
@@ -234,8 +245,8 @@
               />
               <h3 class="team-title">Robert Jakis</h3>
               <p class="team-position">Marketing</p>
-              <ul class="list">
-                <li>
+              <ul class="team-social list">
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Instagram"
@@ -243,7 +254,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Twitter"
@@ -251,7 +262,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Facebook"
@@ -259,7 +270,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на LinkedIn"
@@ -269,7 +280,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-member">
               <img
                 src="./img/team-martin-doe.jpg"
                 alt="photo Martin Doe"
@@ -278,8 +289,8 @@
               />
               <h3 class="team-title">Martin Doe</h3>
               <p class="team-position">UI Designer</p>
-              <ul class="list">
-                <li>
+              <ul class="team-social list">
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Instagram"
@@ -287,7 +298,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Twitter"
@@ -295,7 +306,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на Facebook"
@@ -303,7 +314,7 @@
                   >
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a
                     href=""
                     aria-label="ссылка на LinkedIn"
@@ -321,8 +332,8 @@
       <section class="section">
         <div class="conteiner">
           <h2 class="title">Постоянные клиенты</h2>
-          <ul lang="en" class="list">
-            <li>
+          <ul class="clients list">
+            <li class="item">
               <a
                 href=""
                 aria-label="логотип компании YA&CO"
@@ -330,7 +341,7 @@
               >
               </a>
             </li>
-            <li>
+            <li class="item">
               <a
                 href=""
                 aria-label="логотип компании Company taglinehere"
@@ -338,7 +349,7 @@
               >
               </a>
             </li>
-            <li>
+            <li class="item">
               <a
                 href=""
                 aria-label="логотип компании Company"
@@ -346,7 +357,7 @@
               >
               </a>
             </li>
-            <li>
+            <li class="item">
               <a
                 href=""
                 aria-label="логотип компании Foster Peters"
@@ -354,7 +365,7 @@
               >
               </a>
             </li>
-            <li>
+            <li class="item">
               <a
                 href=""
                 aria-label="логотип компании Brand"
@@ -362,7 +373,7 @@
               >
               </a>
             </li>
-            <li>
+            <li class="item">
               <a
                 href=""
                 aria-label="логотип компании Company tag line"
@@ -375,36 +386,46 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="conteiner">
-        <a href="./index.html" class="logo ftr link">
-          <span class="logo-color">Web</span> Studio
-        </a>
-        <address class="address">
-          г. Киев, пр-т Леси Украинки, 26 <br />
-          <a href="mailto:info@devstudio.com" class="link contact">
-            info@devstudio.com </a
-          ><br />
-          <a href="tel:+380961111111" class="link contact">
-            +38 096 111 11 11
-          </a>
-        </address>
-        <p class="social">Присоединяйтесь</p>
-        <ul class="list">
-          <li>
-            <a href="" aria-label="ссылка на Instagram" class="icon-social">
+        <div class="footer-content">
+          <div class="footer-contacts">
+            <a href="./index.html" class="logo ftr link">
+              <span class="logo-color">Web</span> Studio
             </a>
-          </li>
-          <li>
-            <a href="" aria-label="ссылка на Twitter" class="icon-social"> </a>
-          </li>
-          <li>
-            <a href="" aria-label="ссылка на Facebook" class="icon-social"> </a>
-          </li>
-          <li>
-            <a href="" aria-label="ссылка на LinkedIn" class="icon-social"> </a>
-          </li>
-        </ul>
+            <address class="address">
+              <span>г. Киев, пр-т Леси Украинки, 26</span>
+              <a href="mailto:info@devstudio.com" class="link contact">
+                info@devstudio.com
+              </a>
+              <a href="tel:+380961111111" class="link contact">
+                +38 096 111 11 11
+              </a>
+            </address>
+          </div>
+          <div class="footer-social">
+            <p class="social-title">Присоединяйтесь</p>
+            <ul class="social-net list">
+              <li class="item">
+                <a href="" aria-label="ссылка на Instagram" class="icon-social">
+                </a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="ссылка на Twitter" class="icon-social">
+                </a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="ссылка на Facebook" class="icon-social">
+                </a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="ссылка на LinkedIn" class="icon-social">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <p class="copiright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
