@@ -502,7 +502,21 @@ img {
 }
 
 /* Portfolio css options */
+
+.filter {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card-title {
+  margin-left: 25px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -511,6 +525,8 @@ img {
 }
 
 .card-kinde {
+  margin-left: 25px;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--font-primary-color);
