@@ -7,16 +7,18 @@
   - add normalize css
   - переповнення тексту для кнопки min-width
   - іконки. поставити заливку кольором + радіус 100% https://youtu.be/_StgByWohXQ?t=3234
-
-
+  - приховати заголовки і описи на Портфоліо
   - Меню: елементи в інлайн-блок, алайн ітемс, контакти марджин-лефт авто
   - Адаптивне розміщення блоків. 
-    Флекс+ формула - марджини зі сторони і з низу
+  Флекс+ формула - марджини зі сторони і з низу
   - 1,38 переглянути про марджин -15
   - 2,04 переглянути про реверс
+  - !допрацювати Портфоліо меін
 
   - flex на всы секцыъ де це потрібно
   - 
+
+  - замінити хедер і футер у Портфоліо
   
 */
 
@@ -88,33 +90,12 @@ img {
 /* delete marker from the list */
 .list {
   list-style: none;
+  padding: 0px;
 }
 
 /* hide the item */
 .hiden {
   display: none;
-}
-
-/* Logo css options */
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.logo-color {
-  color: var(--font-active-element);
-}
-
-/* Logo header */
-.logo.hdr {
-  color: var(--font-secondary-color);
-}
-
-/* Logo footer */
-.logo.ftr {
-  color: var(--font-third-color);
 }
 
 .conteiner {
@@ -163,8 +144,44 @@ img {
   background-color: var(--font-active-element);
 }
 
+/* Logo css options */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-color {
+  color: var(--font-active-element);
+}
+
+/* Logo header */
+.logo.hdr {
+  margin-right: 80px;
+
+  color: var(--font-secondary-color);
+}
+
+/* Logo footer */
+.logo.ftr {
+  color: var(--font-third-color);
+}
+
 /* Header Menu css options */
-.menu .menu-item {
+.menu {
+  display: flex;
+}
+
+.menu .item + .item {
+  margin-left: 50px;
+}
+
+.menu .menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -172,20 +189,45 @@ img {
   color: var(--font-secondary-color);
 }
 
-.menu .menu-item:hover,
-.menu .menu-item:focus {
+.menu .menu-link:hover,
+.menu .menu-link:focus {
   color: var(--font-active-element);
 }
 
-.menu-item.active {
+.menu-link.active {
   color: var(--font-active-element);
 }
 
 /* Header contacts css options */
+.header-nav {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-contact .item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-contact .item + .item {
+  margin-left: 30px;
+}
+
 .icon-contact {
-  display: inline-block;
+  display: block;
   width: 20px;
   height: 20px;
+  margin-right: 10px;
   border-radius: 50%;
 
   vertical-align: middle;
@@ -194,6 +236,10 @@ img {
 }
 
 .header .contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -207,6 +253,8 @@ img {
 
 /* Hero css options*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -223,7 +271,7 @@ img {
   text-transform: uppercase;
 
   /* for example bgc */
-  background-color: rgb(255, 0, 0);
+  background-color: var(--bgc-footer);
 }
 
 /* Sections css options*/
@@ -238,6 +286,8 @@ img {
 }
 
 .section .title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -246,6 +296,11 @@ img {
 }
 
 /* Feature css options */
+.feature {
+  display: flex;
+  justify-content: space-between;
+}
+
 .icon-feature {
   display: block;
   width: 278px;
@@ -260,6 +315,8 @@ img {
 }
 
 .feature-title {
+  margin-top: 30px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -267,7 +324,19 @@ img {
   text-transform: uppercase;
 }
 
+.feature .item {
+  width: 278px;
+}
+
+.feature .item p {
+  margin-top: 10px;
+}
+
 /* Product css options */
+.products {
+  display: flex;
+  justify-content: space-between;
+}
 .products-title {
   font-weight: 700;
   font-size: 14px;
@@ -277,12 +346,45 @@ img {
   text-transform: uppercase;
 
   /* for example bgc */
-  background-color: rgb(255, 0, 0);
+  background-color: var(--bgc-footer);
 }
 
 /* Team css options */
 .team-bgc {
   background-color: var(--bgc-secondary);
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-title {
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--font-secondary-color);
+}
+
+.team-position {
+  margin-top: 10px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--font-primary-color);
+}
+
+.team-social {
+  display: flex;
+  width: 210px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
 }
 
 .icon-team-social {
@@ -299,22 +401,14 @@ img {
   background-color: var(--font-active-element);
 }
 
-.team-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: var(--font-secondary-color);
-}
-
-.team-position {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: var(--font-primary-color);
-}
-
 /* Clients */
+.clients {
+  display: flex;
+}
+
+.clients .item + .item {
+  margin-left: 30px;
+}
 .icon-client {
   display: block;
   width: 175px;
@@ -333,7 +427,7 @@ img {
   background-color: var(--bgc-primary);
 }
 
-/* Footer css options */
+/* Footer general css options */
 .footer {
   padding-top: 50px;
   padding-bottom: 0px;
@@ -343,12 +437,46 @@ img {
   background-color: var(--bgc-footer);
 }
 
+/* Footer general css options */
+.footer-content {
+  display: flex;
+}
+
+/* Footer address css options */
 .address {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: space-between;
+  margin-top: 10px;
+
   font-style: normal;
 }
 
 .footer .contact {
   color: var(--font-ftr-contact);
+}
+
+/* Footer social net css options */
+.footer-social {
+  margin-top: 10px;
+  margin-left: 180px;
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social-net {
+  display: flex;
+  margin-top: 10px;
+}
+
+.social-net .item + .item {
+  margin-left: 10px;
 }
 
 .icon-social {
@@ -364,13 +492,7 @@ img {
   background-color: var(--font-active-element);
 }
 
-.social {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
+/* Footer copiright css options */
 .copiright {
   padding-top: 20px;
   padding-bottom: 20px;
