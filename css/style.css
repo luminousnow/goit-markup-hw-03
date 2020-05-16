@@ -1,27 +1,3 @@
-/* 
-  - оутлайн на всі блоки 
-  - обгорнути секції в контейнер на 1230рх,
-    падінг на контейнер left-right 15
-    марджин лефт і райт авто https://youtu.be/_StgByWohXQ?t=3663 https://youtu.be/_StgByWohXQ?t=5200
-  - боді скинути марджин на 0
-  - add normalize css
-  - переповнення тексту для кнопки min-width
-  - іконки. поставити заливку кольором + радіус 100% https://youtu.be/_StgByWohXQ?t=3234
-  - приховати заголовки і описи на Портфоліо
-  - Меню: елементи в інлайн-блок, алайн ітемс, контакти марджин-лефт авто
-  - Адаптивне розміщення блоків. 
-  Флекс+ формула - марджини зі сторони і з низу
-  - 1,38 переглянути про марджин -15
-  - 2,04 переглянути про реверс
-  - !допрацювати Портфоліо меін
-
-  - flex на всы секцыъ де це потрібно
-  - 
-
-  - замінити хедер і футер у Портфоліо
-  
-*/
-
 :root {
   --font-primary-color: #757575;
   --font-secondary-color: #212121;
@@ -50,7 +26,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 body {
@@ -126,6 +102,8 @@ img {
 
 /* Filter button css options*/
 .button {
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -135,6 +113,10 @@ img {
   color: var(--font-secondary-color);
 
   background-color: var(--bgc-secondary);
+}
+
+.filter .item + .item {
+  margin-left: 10px;
 }
 
 .button:hover,
@@ -251,8 +233,11 @@ img {
 
 /* Hero css options*/
 .hero {
+  /* for example */
   padding-top: 200px;
+  /* for example */
   padding-bottom: 200px;
+
   text-align: center;
 }
 
@@ -441,7 +426,7 @@ img {
 }
 
 /* Footer address css options */
-.address {
+/* .address {
   display: flex;
   flex-direction: column;
   height: 80px;
@@ -449,6 +434,17 @@ img {
   margin-top: 10px;
 
   font-style: normal;
+} */
+
+.address {
+  display: flex;
+  flex-direction: column;
+
+  font-style: normal;
+}
+
+.footer-contacts .contact {
+  margin-top: 10px;
 }
 
 .footer .contact {
@@ -513,6 +509,24 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
+.portfolio .item {
+  width: 380px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio .item:nth-last-child(3n) {
+  margin-left: 0px;
+}
+
+.portfolio .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+/* .portfolio .item:hover,
+.portfolio .item:focus {
+} */
 
 .card-title {
   margin-left: 25px;
