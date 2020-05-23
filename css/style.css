@@ -124,10 +124,6 @@ img {
   background-color: var(--bgc-secondary);
 }
 
-.filter .item + .item {
-  margin-left: 10px;
-}
-
 .button:hover,
 .button:focus {
   color: var(--font-third-color);
@@ -302,7 +298,10 @@ img {
 /* Feature css options */
 .feature {
   display: flex;
-  justify-content: space-between;
+}
+
+.feature > .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .icon-feature {
@@ -342,8 +341,17 @@ img {
 /* Product css options */
 .products {
   display: flex;
-  justify-content: space-between;
 }
+
+.products > .item {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.products > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .products-title {
   font-weight: 700;
   font-size: 14px;
@@ -363,11 +371,25 @@ img {
 
 .team {
   display: flex;
-  justify-content: space-between;
+}
+
+.team > .team-member {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.team > .team-member:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .team-title {
-  padding-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -388,7 +410,6 @@ img {
 
 .team-social {
   display: flex;
-  padding-bottom: 24px;
   justify-content: center;
 }
 
@@ -415,8 +436,8 @@ img {
   display: flex;
 }
 
-.clients .item + .item {
-  margin-left: 30px;
+.clients .item:not(:last-child) {
+  margin-right: 30px;
 }
 .icon-client {
   display: block;
@@ -490,14 +511,15 @@ img {
   display: flex;
 }
 
-.social-net .item + .item {
-  margin-left: 10px;
+.social-net .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .icon-social {
   display: block;
   width: 44px;
   height: 44px;
+
   border-radius: 50%;
 
   background-color: var(--font-primary-color);
@@ -533,6 +555,10 @@ img {
   justify-content: center;
 }
 
+.filter .item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -542,8 +568,10 @@ img {
 .portfolio .item {
   width: 370px;
   margin: 15px;
+
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  overflow: hidden;
 }
 
 /* .portfolio .item:hover,
@@ -552,6 +580,7 @@ img {
 
 .card-content {
   padding: 20px 24px;
+
   border: 1px solid #eeeeee;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -559,6 +588,7 @@ img {
 
 .card-title {
   margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
